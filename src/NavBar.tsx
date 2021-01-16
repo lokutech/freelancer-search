@@ -8,7 +8,6 @@ import SearchIcon from '@material-ui/icons/Search'
 import Grid from '@material-ui/core/Grid'
 import Left from './Left'
 import grey from '@material-ui/core/colors/grey';
-import NavBar from './NavBar'
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -66,23 +65,33 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 )
 
-export default function SearchAppBar() {
+function NavBar() {
   const classes = useStyles()
 
-  return (
-    <div className={classes.root}>
-      <NavBar/>
-      <Grid container >
-        <Grid item xs={3}>
-            <Left />
-        </Grid>
-        <Grid item xs={6}>
-            hi
-        </Grid>
-        <Grid item xs={3}>
-            hi
-        </Grid>
-      </Grid>
+    return (
+<div className={classes.root}>
+      <AppBar position="static" color="primary">
+        <Toolbar>
+          <Typography className={classes.title} variant="h6" noWrap>
+            Freelancer in-depth search
+          </Typography>
+          <div className={classes.search}>
+            <div className={classes.searchIcon}>
+              <SearchIcon />
+            </div>
+            <InputBase
+              placeholder="Search…"
+              classes={{
+                root: classes.inputRoot,
+                input: classes.inputInput,
+              }}
+              inputProps={{ 'aria-label': 'search' }}
+            />
+          </div>
+        </Toolbar>
+      </AppBar>
     </div>
-  )
+    )
 }
+
+export default NavBar
