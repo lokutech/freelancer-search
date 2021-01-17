@@ -55,7 +55,7 @@ export default function ProjectsContests() {
         onChange={handleChange}
         aria-label="projects or contests"
         orientation="vertical"
-        variant="standard"
+        variant='fullWidth'
       >
         <Tab
           classes={{ selected: classes.selected }}

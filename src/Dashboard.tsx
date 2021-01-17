@@ -1,13 +1,15 @@
 import React from 'react'
 import { createStyles, Theme, makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
-import Left from './Left/LeftSidebar'
+import LeftSidebar from './LeftSidebar/LeftSidebar'
 import NavBar from './NavBar'
+import { Paper } from '@material-ui/core'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       flexGrow: 1,
+      overflow: 'hidden',
     },
   }),
 )
@@ -18,15 +20,18 @@ export default function SearchAppBar() {
   return (
     <div className={classes.root}>
       <NavBar />
-      <Grid container justify='center' style={{marginTop: '50px'}} >
+      <Grid container justify='center' style={{marginTop: '50px'}} spacing={2} >
         <Grid item xs={2}>
-          <Left />
+          <LeftSidebar />
         </Grid>
-        <Grid item xs={6}>
-          hi
+        <Grid item xs={7}>
+          <Paper style={{height:'700px'}}>
+          </Paper>
         </Grid>
         <Grid item xs={2}>
-          hi
+          <Paper style={{height:'700px'}}>
+            Hi
+          </Paper>
         </Grid>
       </Grid>
     </div>
