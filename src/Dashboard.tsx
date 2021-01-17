@@ -1,7 +1,7 @@
 import React from 'react'
 import { createStyles, Theme, makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
-import Left from './Left/Left'
+import Left from './Left/LeftSidebar'
 import NavBar from './NavBar'
 
 const useStyles = makeStyles((theme: Theme) =>
