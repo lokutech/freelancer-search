@@ -31,6 +31,7 @@ function Price() {
 
   const handleChangeHour = (event: any, newValue: number | number[]) => {
     setHourValue(newValue as number[])
+    console.log(hourValue)
   }
 
   return (

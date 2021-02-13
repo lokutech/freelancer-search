@@ -1,6 +1,6 @@
 import { Box, Button, Container, makeStyles, TextField, Typography } from '@material-ui/core'
 import Autocomplete from '@material-ui/lab/Autocomplete'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { skillsAll } from './skillsAll'
 
@@ -21,7 +21,6 @@ function Skills() {
   const [inputValue, setInputValue] = useState('')
 
   const handleChange = (value: ISkills[]) => {
-    console.log(value)
     // setValue(value.map(a=>a.id))   // keep it for api call later
     setValue(value)
   }
@@ -30,6 +29,10 @@ function Skills() {
     setValue([])
     setInputValue('')
   }
+
+  useEffect(() => {
+    console.log(value);
+  }, [value])
 
   const classes = useStyle()
   return (
