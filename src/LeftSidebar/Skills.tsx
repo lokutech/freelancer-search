@@ -1,15 +1,8 @@
-import {
-  Box,
-  Button,
-  Chip,
-  Container,
-  makeStyles,
-  TextField,
-  Typography,
-} from '@material-ui/core'
+import { Box, Button, Container, makeStyles, TextField, Typography } from '@material-ui/core'
 import Autocomplete from '@material-ui/lab/Autocomplete'
-
 import React from 'react'
+import { useState } from 'react'
+import {skills} from './skills'
 
 const useStyle = makeStyles({
   popupIndicator: {
@@ -23,11 +16,22 @@ const useStyle = makeStyles({
   },
 })
 
-const handleDelete = () => {
-  console.info('You clicked the delete icon.')
+interface ISkills {
+  name: string
+  id: number
 }
 
 function Skills() {
+  const [state, setState] = useState<number[]>()
+
+  const handleChange = (value: ISkills[]) => {
+    console.log(value)
+    setState(value.map(a=>a.id))
+  }
+
+  const handleDelete = () => {
+    console.info('You clicked the delete icon.')
+  }
   const classes = useStyle()
   return (
     <Container style={{ marginTop: '20px', overflow: 'auto' }}>
@@ -41,9 +45,9 @@ function Skills() {
         disableClearable
         id="tags-outlined"
         options={skills}
-        getOptionLabel={(option) => option.title}
+        getOptionLabel={(option) => option.name}
         filterSelectedOptions
-        style={{ background: 'red' }}
+        onChange={(_event, value) => handleChange(value)}
         ChipProps={{
           size: 'small',
           variant: 'outlined',
@@ -75,7 +79,7 @@ function Skills() {
 
 export default Skills
 
-const skills = [
+const skills2 = [
   { title: 'JavaScript' },
   { title: 'CSS3' },
   { title: 'HTML5' },
