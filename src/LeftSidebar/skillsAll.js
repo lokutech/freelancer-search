@@ -1,4 +1,4 @@
-export const skills = [ 
+export const skillsAll = [ 
   { name: 'PHP', id: 3 }, 
   { name: 'Perl', id: 4 }, 
   { name: 'ASP', id: 5 }, 

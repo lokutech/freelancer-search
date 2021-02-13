@@ -2,7 +2,7 @@ import { Box, Button, Container, makeStyles, TextField, Typography } from '@mate
 import Autocomplete from '@material-ui/lab/Autocomplete'
 import React from 'react'
 import { useState } from 'react'
-import {skills} from './skills'
+import { skillsAll } from './skillsAll'
 
 const useStyle = makeStyles({
   popupIndicator: {
@@ -16,22 +16,21 @@ const useStyle = makeStyles({
   },
 })
 
-interface ISkills {
-  name: string
-  id: number
-}
-
 function Skills() {
-  const [state, setState] = useState<number[]>()
+  const [value, setValue] = useState<ISkills[] | []>([])
+  const [inputValue, setInputValue] = useState('')
 
   const handleChange = (value: ISkills[]) => {
     console.log(value)
-    setState(value.map(a=>a.id))
+    // setValue(value.map(a=>a.id))   // keep it for api call later
+    setValue(value)
   }
 
   const handleDelete = () => {
-    console.info('You clicked the delete icon.')
+    setValue([])
+    setInputValue('')
   }
+
   const classes = useStyle()
   return (
     <Container style={{ marginTop: '20px', overflow: 'auto' }}>
@@ -44,10 +43,13 @@ function Skills() {
         multiple
         disableClearable
         id="tags-outlined"
-        options={skills}
+        options={skillsAll}
+        value={value}
         getOptionLabel={(option) => option.name}
         filterSelectedOptions
-        onChange={(_event, value) => handleChange(value)}
+        onChange={(_event, value1) => handleChange(value1)}
+        inputValue={inputValue}
+        onInputChange={(event, newInputValue) => { setInputValue(newInputValue) }}
         ChipProps={{
           size: 'small',
           variant: 'outlined',
@@ -79,10 +81,7 @@ function Skills() {
 
 export default Skills
 
-const skills2 = [
-  { title: 'JavaScript' },
-  { title: 'CSS3' },
-  { title: 'HTML5' },
-  { title: 'React' },
-  { title: 'NodeJS' },
-]
+interface ISkills {
+  name: string
+  id: number
+}
