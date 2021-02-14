@@ -2,6 +2,7 @@ import React from 'react'
 import { createStyles, Theme, makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import LeftSidebar from './LeftSidebar/LeftSidebar'
+import RightSidebar from './RightSidebar/RightSidebar'
 import NavBar from './NavBar'
 import { Paper } from '@material-ui/core'
 
@@ -29,9 +30,7 @@ export default function SearchAppBar() {
           </Paper>
         </Grid>
         <Grid item xs={2}>
-          <Paper style={{height:'700px'}}>
-            Hi
-          </Paper>
+          <RightSidebar />
         </Grid>
       </Grid>
     </div>
