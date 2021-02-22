@@ -79,7 +79,6 @@ export const skillsAll = [
   { name: 'Building Architecture', id: 84 }, 
   { name: 'Scientific Research', id: 85 }, 
   { name: 'Financial Research', id: 86 }, 
-  { name: 'XXX', id: 88 }, 
   { name: 'Cloud Computing', id: 89 }, 
   { name: 'Magento', id: 90 }, 
   { name: 'MMORPG', id: 91 }, 
