@@ -1,31 +1,44 @@
 import { Box, Button, Card, Container, Divider, Grid, Link } from '@material-ui/core'
 import React from 'react'
-import ListingTypes from '../LeftSidebar/ListingTypes'
-import Price from '../LeftSidebar/Price'
-import ProjectsContests from '../LeftSidebar/ProjectsContests'
-import ProjectType from '../LeftSidebar/ProjectType'
-import Skills from '../LeftSidebar/Skills'
-import Location from '../LeftSidebar/Location'
-import Languages from '../LeftSidebar/Languages'
+import Skills from './Skills'
+import Location from './Location'
+import Languages from './Languages'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendarTimes } from '@fortawesome/free-solid-svg-icons'
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+
+const theme = createMuiTheme({
+  palette: {
+    secondary: {
+      light: '#e7698a',
+      main: '#E2446D',
+      dark: '#9e2f4c',
+      contrastText: '#fff'
+    }
+  },
+});
 
 function LeftSidebar() {
   return (
     <Card style={{marginBottom:'50px'}}>
-      <ProjectsContests />
-      <ProjectType />
+    <ThemeProvider theme={theme}>
+      <i className="fas fa-calendar-times"></i>
+      <Container style={{fontSize: '1.2rem', fontWeight: 'bold', marginTop: 24}}>
+      <FontAwesomeIcon icon={faCalendarTimes} color='#E3446D' style={{marginRight: 10, fontSize: '1.7rem'}} />
+      Exclude
+      </Container>
+      <Box mx={1} my={3} ><Divider variant={'middle'} /></Box>
       <Skills />
-      <Box mx={1} my={3} ><Divider variant={'middle'} /></Box>
-      <ListingTypes />
-      <Box mx={1} my={3} ><Divider variant={'middle'} /></Box>
-      <Price />
       <Box mx={1} my={3} ><Divider variant={'middle'} /></Box>
       <Location />
       <Box mx={1} my={3} ><Divider variant={'middle'} /></Box>
       <Languages />
       <Box mx={1} my={3} ><Divider variant={'middle'} /></Box>
-      <Container style={{margin:'-15px 0 20px 0'}}>
-      <Link href="#" >Reset filters</Link>
+      <Container style={{margin:'-15px 0 20px 0'}} >
+      <Link href="#" color='secondary' >Reset filters</Link>
       </Container>
+    </ThemeProvider>
     </Card>
   )
 }
