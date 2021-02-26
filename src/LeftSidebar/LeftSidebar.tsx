@@ -10,7 +10,7 @@ import Languages from './Languages'
 
 function LeftSidebar() {
   return (
-    <Card style={{marginBottom:'50px'}}>
+    <Card style={{marginBottom:'50px'}} >
       <ProjectsContests />
       <ProjectType />
       <Skills />

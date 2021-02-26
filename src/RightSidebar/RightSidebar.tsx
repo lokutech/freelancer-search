@@ -5,24 +5,11 @@ import Location from './Location'
 import Languages from './Languages'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarTimes } from '@fortawesome/free-solid-svg-icons'
-import { createMuiTheme } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
 
-const theme = createMuiTheme({
-  palette: {
-    secondary: {
-      light: '#e7698a',
-      main: '#E2446D',
-      dark: '#9e2f4c',
-      contrastText: '#fff'
-    }
-  },
-});
 
 function LeftSidebar() {
   return (
     <Card style={{marginBottom:'50px'}}>
-    <ThemeProvider theme={theme}>
       <i className="fas fa-calendar-times"></i>
       <Container style={{fontSize: '1.2rem', fontWeight: 'bold', marginTop: 24}}>
       <FontAwesomeIcon icon={faCalendarTimes} color='#E3446D' style={{marginRight: 10, fontSize: '1.7rem'}} />
@@ -38,7 +25,6 @@ function LeftSidebar() {
       <Container style={{margin:'-15px 0 20px 0'}} >
       <Link href="#" color='secondary' >Reset filters</Link>
       </Container>
-    </ThemeProvider>
     </Card>
   )
 }
