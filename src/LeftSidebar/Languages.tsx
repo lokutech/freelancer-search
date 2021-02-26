@@ -41,7 +41,7 @@ import {
           disableClearable
           id="tags-outlined"
           options={languages}
-          getOptionLabel={(option) => option.title}
+          getOptionLabel={(option) => option.name}
           filterSelectedOptions
           style={{ background: 'red' }}
           ChipProps={{
@@ -75,9 +75,50 @@ import {
   
   export default Languages
   
-  const languages = [
-    { title: 'English' },
-    { title: 'Turkish' },
-    { title: 'Arabic' },
-  ]
-  
+  // Use below function to filter https://stackoverflow.com/a/44313087/711609
+  // @ts-ignore
+  // function filterByValue(string:string) {
+    // return languages.filter((o) =>
+      // Object.keys(o).some((k) =>
+      // @ts-ignore
+        // o[k].toLowerCase().includes(string.toLowerCase()),
+      // ),
+    // )
+  // }
+
+const languages = [
+  { id:"af", nativeName:"Afrikaans", name:"Afrikaans" },
+  { id:"bn", nativeName:"বাংলা",     name:"Bengali" },
+  { id:"ca", nativeName:"Català",   name:"Catalan" },
+  { id:"cs", nativeName:"Čeština",  name:"Czech" },
+  { id:"da", nativeName:"Dansk",    name:"Danish" },
+  { id:"de", nativeName:"Deutsch",  name:"German" },
+  { id:"el", nativeName:"ελληνικά", name:"Greek" },
+  { id:"en", nativeName:"English",  name:"English" },
+  { id:"es", nativeName:"Español",  name:"Spanish" },
+  { id:"fi", nativeName:"Suomi",    name:"Finnish" },
+  { id:"fil",nativeName:"Filipino", name:"Filipino" },
+  { id:"fr", nativeName:"Français", name:"French" },
+  { id:"hi", nativeName:"हिन्दी",      name:"Hindi" },
+  { id:"hu", nativeName:"Magyar",   name:"Hungarian" },
+  { id:"id", nativeName:"Bahasa Indonesia", name:"Indonesian" },
+  { id:"it", nativeName:"Italiano", name:"Italian" },
+  { id:"ja", nativeName:"日本語",    name:"Japanese" },
+  { id:"ko", nativeName:"한국어",     name:"Korean" },
+  { id:"ms", nativeName:"Bahasa Malaysia", name:"Malay" },
+  { id:"nb", nativeName:"Norsk-Bokmål", name:"Norwegian" },
+  { id:"nl", nativeName:"Nederlands", name:"Dutch" },
+  { id:"pl", nativeName:"Polski",    name:"Polish" },
+  { id:"pt", nativeName:"Português", name:"Portuguese" },
+  { id:"ro", nativeName:"Română",    name:"Romanian" },
+  { id:"ru", nativeName:"Русский",   name:"Russian" },
+  { id:"sl", nativeName:"Slovenščina", name:"Slovenian" },
+  { id:"sq", nativeName:"Shqip",     name:"Albanian" },
+  { id:"sv", nativeName:"Svenska",   name:"Swedish" },
+  { id:"sw", nativeName:"Kiswahili", name:"Swahili" },
+  { id:"th", nativeName:"ภาษาไทย",   name:"Thai" },
+  { id:"tr", nativeName:"Türkçe",    name:"Turkish" },
+  { id:"uk", nativeName:"Українська", name:"Ukranian" },
+  { id:"vi", nativeName:"Tiếng Việt", name:"Vietnamese" },
+  { id:"zh", nativeName:"中文(简体)",  name:"Chinese" }
+]
