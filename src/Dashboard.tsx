@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid'
 import LeftSidebar from './LeftSidebar/LeftSidebar'
 import RightSidebar from './RightSidebar/RightSidebar'
 import NavBar from './NavBar'
-import Main from './middleSection/Main'
+import Main from './MainSection/Main'
 
 export default function SearchAppBar() {
 

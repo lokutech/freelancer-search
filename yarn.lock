@@ -10902,6 +10902,11 @@ type-detect@4.0.8:
   resolved "https://registry.yarnpkg.com/type-detect/-/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
   integrity sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==
 
+type-expand@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/type-expand/-/type-expand-1.0.0.tgz#c187f84324f47eae5a32ed10c2df2345330bdb02"
+  integrity sha512-1fO/mIOl7QRreOBn83x07v8TL6OqhYKr/CHwFOI70D9cIr9YJ2PM/57Uazi9GbKSQJHB9yNXzYaE14wqQ4kmeQ==
+
 type-fest@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.11.0.tgz#97abf0872310fed88a5c466b25681576145e33f1"
