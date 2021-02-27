@@ -60,9 +60,6 @@ function Price() {
         classes={{rail:classes.rail,track:classes.track,thumb:classes.thumb}}
       />
       <Typography align={'center'} variant='body2'>${hourValue[0]} - ${hourValue[1]}</Typography>
-      {/* <Box my={3}>
-        <Divider variant={'fullWidth'} />
-      </Box> */}
     </Container>
   )
 }

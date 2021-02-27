@@ -1,6 +1,7 @@
 import { InputAdornment, Paper, TextField } from '@material-ui/core'
 import SearchIcon from '@material-ui/icons/Search';
 import React from 'react'
+import Job from './Job'
 
 function Main() {
   return (
@@ -25,6 +26,7 @@ function Main() {
         <span style={{fontWeight: 'bold', flexGrow: 1, paddingLeft: 10}}>1400 Results</span>
         <span style={{fontWeight: 'bold'}}>Sort by:Highest Price</span>
       </div>
+      <Job jobId={28945553} />
     </Paper>
   )
 }
