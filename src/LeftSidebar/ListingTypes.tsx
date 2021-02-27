@@ -1,7 +1,6 @@
 import {
   Checkbox,
   Container,
-  Divider,
   FormControlLabel,
   Typography,
 } from '@material-ui/core'
@@ -9,35 +8,40 @@ import React, { useState } from 'react'
 
 function ListingTypes() {
   const [state, setState] = useState({
-    checkedA: false,
-    checkedB: false,
-    checkedC: false,
-    checkedD: false,
-    checkedE: false,
-    checkedF: false,
+    checkedFixed: false,
+    checkedSealed: false,
+    checkedNda: false,
+    checkedUrgent: false,
+    checkedFulltime: false,
+    checkedRecruiter: false,
   })
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setState({ ...state, [event.target.name]: event.target.checked })
+    setState(
+      { ...state,
+         [event.target.name]: event.target.checked }
+      )
   }
 
-  const MyCheckbox = (props: {
+  interface Checkbox {
     name: string
     label: string
-    state?: boolean
-  }) => {
+    state: boolean
+  }
+
+  const MyCheckbox = ({name, state, label}:Checkbox) => {
     return (
       <FormControlLabel
         style={{ width: '100%' }}
         control={
           <Checkbox
-            checked={props.state}
+            checked={state}
             onChange={handleChange}
-            name={props.name}
+            name={name}
             color="primary"
           />
         }
-        label={props.label}
+        label={<Typography variant="body2">{label}</Typography>}
       />
     )
   }
@@ -46,78 +50,12 @@ function ListingTypes() {
     <div>
       <Container style={{ marginTop: '20px' }}>
         <Typography style={{ fontWeight: 'bold' }}>Listing Types</Typography>
-        <FormControlLabel
-          style={{ width: '100%' }}
-          control={
-            <Checkbox
-              checked={state.checkedA}
-              onChange={handleChange}
-              name="checkedA"
-              color="primary"
-            />
-          }
-          label={<Typography variant="body2">Fixed Projects</Typography>}
-        />
-        <FormControlLabel
-          style={{ width: '100%' }}
-          control={
-            <Checkbox
-              checked={state.checkedB}
-              onChange={handleChange}
-              name="checkedB"
-              color="primary"
-            />
-          }
-          label={<Typography variant="body2">Sealed</Typography>}
-        />
-        <FormControlLabel
-          style={{ width: '100%' }}
-          control={
-            <Checkbox
-              checked={state.checkedC}
-              onChange={handleChange}
-              name="checkedC"
-              color="primary"
-            />
-          }
-          label={<Typography variant="body2">NDA</Typography>}
-        />
-        <FormControlLabel
-          style={{ width: '100%' }}
-          control={
-            <Checkbox
-              checked={state.checkedD}
-              onChange={handleChange}
-              name="checkedD"
-              color="primary"
-            />
-          }
-          label={<Typography variant="body2">Urgent</Typography>}
-        />
-        <FormControlLabel
-          style={{ width: '100%' }}
-          control={
-            <Checkbox
-              checked={state.checkedE}
-              onChange={handleChange}
-              name="checkedE"
-              color="primary"
-            />
-          }
-          label={<Typography variant="body2">Fulltime</Typography>}
-        />
-        <FormControlLabel
-          style={{ width: '100%' }}
-          control={
-            <Checkbox
-              checked={state.checkedF}
-              onChange={handleChange}
-              name="checkedF"
-              color="primary"
-            />
-          }
-          label={<Typography variant="body2">Recruiter</Typography>}
-        />
+        <MyCheckbox name='checkedFixed' state={state.checkedFixed} label='Fixed Projects' />
+        <MyCheckbox name='checkedSealed' state={state.checkedSealed} label='Sealed'/>
+        <MyCheckbox name='checkedNda' state={state.checkedNda} label='NDA' />
+        <MyCheckbox name='checkedUrgent' state={state.checkedUrgent} label='Urgent'/>
+        <MyCheckbox name='checkedFulltime' state={state.checkedFulltime} label='Fulltime'/>
+        <MyCheckbox name='checkedRecruiter' state={state.checkedRecruiter} label='Recruiter'/>
       </Container>
     </div>
   )
