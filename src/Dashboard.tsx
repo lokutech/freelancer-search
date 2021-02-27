@@ -4,6 +4,7 @@ import LeftSidebar from './LeftSidebar/LeftSidebar'
 import RightSidebar from './RightSidebar/RightSidebar'
 import NavBar from './NavBar'
 import { Paper } from '@material-ui/core'
+import Main from './middleSection/Main'
 
 export default function SearchAppBar() {
 
@@ -15,8 +16,7 @@ export default function SearchAppBar() {
           <LeftSidebar />
         </Grid>
         <Grid item xs={7} style={{minWidth: 700}}>
-          <Paper style={{height:'700px'}}>
-          </Paper>
+          <Main />
         </Grid>
         <Grid item xs={2} style={{minWidth: 280, marginRight: 20}}>
           <RightSidebar />

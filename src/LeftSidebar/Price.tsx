@@ -45,7 +45,7 @@ function Price() {
         style={{marginBottom:-10}}
         classes={{rail:classes.rail,track:classes.track,thumb:classes.thumb}}
       />
-      <Typography align={'center'}>${fixedValue[0]} - ${fixedValue[1]}</Typography>
+      <Typography align={'center'} variant='body2'>${fixedValue[0]} - ${fixedValue[1]}</Typography>
 
       <Box my={3}>
         <Divider variant={'fullWidth'} />
@@ -59,7 +59,7 @@ function Price() {
         style={{marginBottom:-10}}
         classes={{rail:classes.rail,track:classes.track,thumb:classes.thumb}}
       />
-      <Typography align={'center'}>${hourValue[0]} - ${hourValue[1]}</Typography>
+      <Typography align={'center'} variant='body2'>${hourValue[0]} - ${hourValue[1]}</Typography>
       {/* <Box my={3}>
         <Divider variant={'fullWidth'} />
       </Box> */}

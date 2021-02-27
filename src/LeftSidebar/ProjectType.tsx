@@ -30,9 +30,9 @@ function ProjectType() {
               color="primary"
             />
           }
-          label="Fixed Projects"
+          label={<Typography variant="body2">Fixed Projects</Typography>}
         />
-                <FormControlLabel
+        <FormControlLabel
           control={
             <Checkbox
               checked={state.checkedB}
@@ -41,9 +41,9 @@ function ProjectType() {
               color="primary"
             />
           }
-          label="Hourly Projects"
+          label={<Typography variant="body2">Hourly Projects</Typography>}
         />
-        <Divider style={{marginTop:'10px', marginBottom: '15px'}}/>
+        <Divider style={{ marginTop: '10px', marginBottom: '15px' }} />
       </Container>
     </div>
   )

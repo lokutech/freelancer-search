@@ -21,15 +21,20 @@ function ListingTypes() {
     setState({ ...state, [event.target.name]: event.target.checked })
   }
 
-  const MyCheckbox = (props: { name: string; label: string, state?: boolean }) => {
+  const MyCheckbox = (props: {
+    name: string
+    label: string
+    state?: boolean
+  }) => {
     return (
-      <FormControlLabel style={{width:'100%'}}
-      control={
+      <FormControlLabel
+        style={{ width: '100%' }}
+        control={
           <Checkbox
-          checked={props.state}
-          onChange={handleChange}
-          name={props.name}
-          color="primary"
+            checked={props.state}
+            onChange={handleChange}
+            name={props.name}
+            color="primary"
           />
         }
         label={props.label}
@@ -41,12 +46,78 @@ function ListingTypes() {
     <div>
       <Container style={{ marginTop: '20px' }}>
         <Typography style={{ fontWeight: 'bold' }}>Listing Types</Typography>
-        <MyCheckbox name="checkedA" label="Fixed Projects" state={state.checkedA} />
-        <MyCheckbox name="checkedB" label="Sealed" state={state.checkedB} />
-        <MyCheckbox name="checkedC" label="NDA" state={state.checkedC} />
-        <MyCheckbox name="checkedD" label="Urgent" state={state.checkedD} />
-        <MyCheckbox name="checkedE" label="Fulltime" state={state.checkedE} />
-        <MyCheckbox name="checkedF" label="Recruiter" state={state.checkedF} />
+        <FormControlLabel
+          style={{ width: '100%' }}
+          control={
+            <Checkbox
+              checked={state.checkedA}
+              onChange={handleChange}
+              name="checkedA"
+              color="primary"
+            />
+          }
+          label={<Typography variant="body2">Fixed Projects</Typography>}
+        />
+        <FormControlLabel
+          style={{ width: '100%' }}
+          control={
+            <Checkbox
+              checked={state.checkedB}
+              onChange={handleChange}
+              name="checkedB"
+              color="primary"
+            />
+          }
+          label={<Typography variant="body2">Sealed</Typography>}
+        />
+        <FormControlLabel
+          style={{ width: '100%' }}
+          control={
+            <Checkbox
+              checked={state.checkedC}
+              onChange={handleChange}
+              name="checkedC"
+              color="primary"
+            />
+          }
+          label={<Typography variant="body2">NDA</Typography>}
+        />
+        <FormControlLabel
+          style={{ width: '100%' }}
+          control={
+            <Checkbox
+              checked={state.checkedD}
+              onChange={handleChange}
+              name="checkedD"
+              color="primary"
+            />
+          }
+          label={<Typography variant="body2">Urgent</Typography>}
+        />
+        <FormControlLabel
+          style={{ width: '100%' }}
+          control={
+            <Checkbox
+              checked={state.checkedE}
+              onChange={handleChange}
+              name="checkedE"
+              color="primary"
+            />
+          }
+          label={<Typography variant="body2">Fulltime</Typography>}
+        />
+        <FormControlLabel
+          style={{ width: '100%' }}
+          control={
+            <Checkbox
+              checked={state.checkedF}
+              onChange={handleChange}
+              name="checkedF"
+              color="primary"
+            />
+          }
+          label={<Typography variant="body2">Recruiter</Typography>}
+        />
       </Container>
     </div>
   )
