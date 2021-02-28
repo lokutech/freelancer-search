@@ -26,7 +26,7 @@ function Job({jobId}: jobId) {
       const url =
     'https://www.freelancer.com/api/projects/0.1/projects/'+jobId+'?full_description&job_details&upgrade_details&attachment_details&file_details&qualification_details&selected_bids&hireme_details&user_details&invited_freelancer_details&recommended_freelancer_details&hourly_details&support_session_details&location_details&nda_signature_details&project_collaboration_details&proximity_details&review_availability_details&corporate_users&marketing_mobile_number&sanction_details&limited_account&user_avatar&user_country_details&user_profile_description&user_display_info&user_jobs&user_balance_details&user_qualification_details&user_membership_details&user_financial_details&user_location_details&user_portfolio_details&user_preferred_details&user_status&user_reputation&user_employer_reputation&user_reputation_extra&user_employer_reputation_extra&user_cover_image&user_past_cover_images&user_recommendations&user_responsiveness&corporate_users&marketing_mobile_number&sanction_details&limited_account&compact'
     
-      let { data }: data  = await axios.get(url)
+      let {data} = await axios.get<data>(url)
       
       console.log(data.result.title)
       
@@ -37,10 +37,10 @@ function Job({jobId}: jobId) {
       setBid(data.result.bid_stats.bid_count)
       setCurrency(data.result.currency)
       setBudget(data.result.budget)
-      setJobs(data.result.jobs)
-      setRating(data.result.owner.employer_reputation.entire_history.overall)
-      setCountry(data.result.owner.location.country)
-      setReviewCount(data.result.owner.employer_reputation.entire_history.all)
+      setJobs(data.result.jobs) //!!!!!!!!!!!!!!! &job_details
+      setRating(data.result.owner.employer_reputation.entire_history.overall) //!!!!!!!!!!!!!!!
+      setCountry(data.result.owner.location.country) //!!!!!!!!!!
+      setReviewCount(data.result.owner.employer_reputation.entire_history.all) //!!!!!!!!!!
     } fetchData()
   }, [jobId])
 
@@ -108,13 +108,12 @@ interface jobId {
   jobId: number
 }
 
-type Ijobs = data['data']['result']['jobs']
-type Icurrency = data['data']['result']['currency']
-type Ibudget = data['data']['result']['budget']
-type Icountry = data['data']['result']['owner']['location']['country']
+type Ijobs = data['result']['jobs']
+type Icurrency = data['result']['currency']
+type Ibudget = data['result']['budget']
+type Icountry = data['result']['owner']['location']['country']
 
 interface data {
-  data: {
     status: string;
     result: {
         id: number;
@@ -452,5 +451,4 @@ interface data {
         selected_bids: never[];
     };
     request_id: string;
-};
 }
