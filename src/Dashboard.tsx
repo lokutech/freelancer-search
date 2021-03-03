@@ -10,7 +10,7 @@ export default function SearchAppBar() {
   return (
     <div>
       <NavBar />
-      <Grid container justify='space-between' wrap='nowrap' style={{marginTop: '50px', gap: 16}}  >
+      <Grid container justify='space-between' wrap='nowrap' style={{marginTop: '50px', gap: 16, minWidth: 1460}}  >
         <Grid item xs={2} style={{minWidth: 280, marginLeft: 20}}>
           <LeftSidebar />
         </Grid>

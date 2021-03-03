@@ -41,7 +41,7 @@ function ListingTypes() {
             color="primary"
           />
         }
-        label={<Typography variant="body2">{label}</Typography>}
+        label={<Typography>{label}</Typography>}
       />
     )
   }

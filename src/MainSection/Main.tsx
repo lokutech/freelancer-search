@@ -5,7 +5,7 @@ import Job from './Job'
 
 function Main() {
   return (
-    <Paper style={{ height: '700px' }}>
+    <Paper style={{ paddingBottom: 1, minWidth: 830 }}>
       <div style={{ padding: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #BEC0C2'}}>
         <TextField
           id="outlined-basic"

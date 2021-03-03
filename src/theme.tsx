@@ -15,7 +15,12 @@ const theme = createMuiTheme({
     },
     background: {
       default: grey[200]
-    }
+    },
   },
+  typography: {
+    body2: {
+      fontSize: "1rem"
+    }
+  }
 });
 export default theme

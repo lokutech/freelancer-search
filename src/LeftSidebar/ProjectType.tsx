@@ -30,7 +30,7 @@ function ProjectType() {
               color="primary"
             />
           }
-          label={<Typography variant="body2">Fixed Projects</Typography>}
+          label={<Typography>Fixed Projects</Typography>}
         />
         <FormControlLabel
           control={
@@ -41,7 +41,7 @@ function ProjectType() {
               color="primary"
             />
           }
-          label={<Typography variant="body2">Hourly Projects</Typography>}
+          label={<Typography>Hourly Projects</Typography>}
         />
         <Divider style={{ marginTop: '10px', marginBottom: '15px' }} />
       </Container>

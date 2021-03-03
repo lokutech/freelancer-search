@@ -20,9 +20,18 @@
   margin-left: 10px;
 }
 
+.job__bottom {
+  margin-left: 62px;
+}
+
 .job__side {
   margin-left: 20px;
   min-width: fit-content;
+}
+
+.job__infoExtras {
+  display: flex;
+  gap: 20px;
 }
 
 .job__infoExtras__right,
@@ -79,7 +88,7 @@
 .job__side img {
     margin-top: 20px;
     margin-left: 20px;
-    width:30%;
+    height:10%;
     /* float: right; */
     display: block;
     /* opacity: 0.5; */
