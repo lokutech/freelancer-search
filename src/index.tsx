@@ -7,11 +7,11 @@ import theme from './theme'
 import { CssBaseline } from '@material-ui/core'
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <App />
-    </ThemeProvider>
-  </React.StrictMode>,
+    </ThemeProvider>,
+  // </React.StrictMode>,
   document.getElementById('root'),
 )

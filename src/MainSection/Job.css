@@ -20,12 +20,16 @@
   margin-left: 10px;
 }
 
+.job__summary {
+  max-width: 75ch;
+}
+
 .job__bottom {
   margin-left: 62px;
 }
 
 .job__side {
-  margin-left: 20px;
+  margin-left: auto;
   min-width: fit-content;
 }
 
@@ -86,10 +90,7 @@
 }
 
 .job__side img {
-    margin-top: 20px;
-    margin-left: 20px;
     height:10%;
-    /* float: right; */
+    float: right;
     display: block;
-    /* opacity: 0.5; */
 }

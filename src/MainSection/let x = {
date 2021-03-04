@@ -1,0 +1,350 @@
+let x = {
+  "11747986": {
+    "id": 11747986,
+    "username": "khushh07",
+    "closed": false,
+    "hourly_rate": 10,
+    "registration_date": 1406138857,
+    "limited_account": false,
+    "display_name": "khushh07",
+    "location": {
+      "country": {
+        "name": "India",
+        "flag_url": "/img/flags/png/in.png",
+        "code": "in",
+        "highres_flag_url": "/img/flags/highres_png/india.png",
+        "flag_url_cdn": "//cdn2.f-cdn.com/img/flags/png/in.png",
+        "highres_flag_url_cdn": "//cdn3.f-cdn.com/img/flags/highres_png/india.png"
+      },
+      "city": "Kancheepuram"
+    },
+    "role": "freelancer",
+    "chosen_role": "freelancer",
+    "employer_reputation": {
+      "entire_history": {
+        "overall": 4.991995780810882,
+        "positive": 0.003733168154229899,
+        "category_ratings": {
+          "clarity_spec": 4.971128130287545,
+          "communication": 4.988850773766866,
+          "payment_prom": 5.000000000000001,
+          "professionalism": 5.000000000000001,
+          "work_for_again": 5.000000000000001
+        },
+        "all": 32,
+        "reviews": 32,
+        "complete": 32,
+        "incomplete": 0,
+        "completion_rate": 1
+      },
+      "last3months": {
+        "overall": 5,
+        "positive": 0,
+        "category_ratings": {
+          "clarity_spec": 5,
+          "communication": 5,
+          "payment_prom": 5,
+          "professionalism": 5,
+          "work_for_again": 5
+        },
+        "all": 1,
+        "reviews": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "completion_rate": 1
+      },
+      "last12months": {
+        "overall": 4.995279115972596,
+        "positive": 0,
+        "category_ratings": {
+          "clarity_spec": 4.976395579862984,
+          "communication": 4.999999999999999,
+          "payment_prom": 4.999999999999999,
+          "professionalism": 4.999999999999999,
+          "work_for_again": 4.999999999999999
+        },
+        "all": 24,
+        "reviews": 24,
+        "complete": 24,
+        "incomplete": 0,
+        "completion_rate": 1
+      },
+      "user_id": 11747986,
+      "role": "employer",
+      "earnings_score": 4.0346,
+      "job_history": {
+        "count_other": 72,
+        "job_counts": [
+          {
+            "count": 16,
+            "job": {
+              "id": 55,
+              "name": "Excel",
+              "category": {
+                "id": 4,
+                "name": "Data Entry & Admin"
+              },
+              "local": false
+            }
+          },
+          {
+            "count": 12,
+            "job": {
+              "id": 39,
+              "name": "Data Entry",
+              "category": {
+                "id": 4,
+                "name": "Data Entry & Admin"
+              },
+              "local": false
+            }
+          },
+          {
+            "count": 11,
+            "job": {
+              "id": 36,
+              "name": "Data Processing",
+              "category": {
+                "id": 4,
+                "name": "Data Entry & Admin"
+              },
+              "local": false
+            }
+          },
+          {
+            "count": 9,
+            "job": {
+              "id": 417,
+              "name": "Hire me",
+              "category": {
+                "id": 99,
+                "name": "Other"
+              },
+              "local": false
+            }
+          },
+          {
+            "count": 7,
+            "job": {
+              "id": 95,
+              "name": "Web Scraping",
+              "category": {
+                "id": 1,
+                "name": "Websites, IT & Software"
+              },
+              "local": false
+            }
+          }
+        ]
+      },
+      "project_stats": {
+        "open": 18,
+        "work_in_progress": 7,
+        "complete": 91,
+        "pending": 0,
+        "draft": 0
+      }
+    },
+    "status": {
+      "email_verified": true
+    },
+    "primary_currency": {
+      "id": 11,
+      "code": "INR",
+      "sign": "₹",
+      "name": "Indian Rupee",
+      "exchange_rate": 0.013754,
+      "country": "IN"
+    },
+    "primary_language": "en",
+    "public_name": "Khushabu K.",
+    "company": "appin technology lab",
+    "pool_ids": [],
+    "enterprise_ids": [],
+    "escrowcom_account_linked": true,
+    "escrowcom_interaction_required": false,
+    "timezone": {
+      "id": 295,
+      "country": "MG",
+      "timezone": "Indian/Antananarivo",
+      "offset": 3
+    },
+    "oauth_password_credentials_allowed": false,
+    "registration_completed": true,
+    "is_profile_visible": true
+  },
+  "48418378": {
+    "id": 48418378,
+    "username": "Wang89818",
+    "closed": false,
+    "hourly_rate": 25,
+    "registration_date": 1595322253,
+    "limited_account": false,
+    "display_name": "Wang89818",
+    "location": {
+      "country": {
+        "name": "China",
+        "flag_url": "/img/flags/png/cn.png",
+        "code": "cn",
+        "highres_flag_url": "/img/flags/highres_png/china.png",
+        "flag_url_cdn": "//cdn5.f-cdn.com/img/flags/png/cn.png",
+        "highres_flag_url_cdn": "//cdn2.f-cdn.com/img/flags/highres_png/china.png"
+      },
+      "city": "BeiJing"
+    },
+    "role": "employer",
+    "chosen_role": "freelancer",
+    "employer_reputation": {
+      "entire_history": {
+        "overall": 4.294117647058823,
+        "positive": 0,
+        "category_ratings": {
+          "clarity_spec": 4.294117647058823,
+          "communication": 4.294117647058823,
+          "payment_prom": 4.294117647058823,
+          "professionalism": 4.294117647058823,
+          "work_for_again": 4.294117647058823
+        },
+        "all": 2,
+        "reviews": 2,
+        "complete": 2,
+        "incomplete": 0,
+        "completion_rate": 1
+      },
+      "last3months": {
+        "overall": 0,
+        "positive": 0,
+        "category_ratings": {
+          "clarity_spec": 0,
+          "communication": 0,
+          "payment_prom": 0,
+          "professionalism": 0,
+          "work_for_again": 0
+        },
+        "all": 0,
+        "reviews": 0,
+        "complete": 0,
+        "incomplete": 0,
+        "completion_rate": 0
+      },
+      "last12months": {
+        "overall": 4.294117647058823,
+        "positive": 0,
+        "category_ratings": {
+          "clarity_spec": 4.294117647058823,
+          "communication": 4.294117647058823,
+          "payment_prom": 4.294117647058823,
+          "professionalism": 4.294117647058823,
+          "work_for_again": 4.294117647058823
+        },
+        "all": 2,
+        "reviews": 2,
+        "complete": 2,
+        "incomplete": 0,
+        "completion_rate": 1
+      },
+      "user_id": 48418378,
+      "role": "employer",
+      "earnings_score": 1.8588,
+      "job_history": {
+        "count_other": 5,
+        "job_counts": [
+          {
+            "count": 2,
+            "job": {
+              "id": 29,
+              "name": "Windows Desktop",
+              "category": {
+                "id": 1,
+                "name": "Websites, IT & Software"
+              },
+              "local": false
+            }
+          },
+          {
+            "count": 1,
+            "job": {
+              "id": 951,
+              "name": "App Developer",
+              "category": {
+                "id": 1,
+                "name": "Websites, IT & Software"
+              },
+              "local": false
+            }
+          },
+          {
+            "count": 1,
+            "job": {
+              "id": 417,
+              "name": "Hire me",
+              "category": {
+                "id": 99,
+                "name": "Other"
+              },
+              "local": false
+            }
+          },
+          {
+            "count": 1,
+            "job": {
+              "id": 39,
+              "name": "Data Entry",
+              "category": {
+                "id": 4,
+                "name": "Data Entry & Admin"
+              },
+              "local": false
+            }
+          },
+          {
+            "count": 1,
+            "job": {
+              "id": 1177,
+              "name": "Internet of Things (IoT)",
+              "category": {
+                "id": 5,
+                "name": "Engineering & Science"
+              },
+              "local": false
+            }
+          }
+        ]
+      },
+      "project_stats": {
+        "open": 5,
+        "work_in_progress": 1,
+        "complete": 11,
+        "pending": 0,
+        "draft": 0
+      }
+    },
+    "status": {
+      "email_verified": true
+    },
+    "primary_currency": {
+      "id": 1,
+      "code": "USD",
+      "sign": "$",
+      "name": "US Dollar",
+      "exchange_rate": 1,
+      "country": "US"
+    },
+    "primary_language": "en",
+    "public_name": "Wang C.",
+    "company": "",
+    "pool_ids": [],
+    "enterprise_ids": [],
+    "escrowcom_account_linked": true,
+    "escrowcom_interaction_required": false,
+    "timezone": {
+      "id": 209,
+      "country": "CN",
+      "timezone": "Asia/Shanghai",
+      "offset": 8
+    },
+    "oauth_password_credentials_allowed": false,
+    "registration_completed": true,
+    "is_profile_visible": true
+  }
+}
