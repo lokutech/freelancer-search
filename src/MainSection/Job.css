@@ -12,6 +12,14 @@
   margin-right: 10px;
 }
 
+.job__card {
+  border-bottom: 1px solid #DEDEDE;
+
+}
+.job__card:hover {
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.08),0 2px 4px 0 rgba(0,0,0,.12);
+}
+
 .job__title {
   font-size: 1.3rem;
 }
@@ -22,6 +30,7 @@
 
 .job__summary {
   max-width: 75ch;
+  word-wrap: break-word;
 }
 
 .job__bottom {
@@ -93,4 +102,5 @@
     height:10%;
     float: right;
     display: block;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
